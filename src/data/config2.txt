@@ -1,0 +1,4 @@
+mem = 4 GB;
+palavra = 4 B;
+cache = 16 MB;
+linha = 4 pal;
