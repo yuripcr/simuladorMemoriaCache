@@ -1,5 +1,5 @@
 # Simulador de Acesso à Memória Cache
-Este simulador permite realizar a simulação de diferentes tipos de mapeamento de memória :
+Este simulador permite realizar a simulação de diferentes tipos de mapeamento da memória cache:
 
 - **Mapeamento Direto**
 - **Mapeamento Associativo**
