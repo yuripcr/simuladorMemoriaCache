@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.App">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-4079166"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="c22d2" class="javax.swing.JButton" binding="configButton">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <opaque value="true"/>
+          <requestFocusEnabled value="true"/>
+          <rolloverEnabled value="true"/>
+          <text value="Escolha o arquivo de configuração"/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="c406b" class="javax.swing.JButton" binding="testeButton">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Escolha o arquivo de teste"/>
+        </properties>
+      </component>
+      <component id="34d1f" class="javax.swing.JButton" binding="iniciarButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Iniciar"/>
+        </properties>
+      </component>
+      <component id="9a4da" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Simulador de Memória Cache - Desenvolvido por Yuri Poli"/>
+        </properties>
+      </component>
+      <grid id="84258" binding="subPanel" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4079166"/>
+        </properties>
+        <border type="line" title="Substituições">
+          <title-color color="-16777216"/>
+          <color color="-16777216"/>
+        </border>
+        <children>
+          <component id="5748c" class="javax.swing.JRadioButton" binding="randomRadioButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4079166"/>
+              <foreground color="-16777216"/>
+              <text value="Random"/>
+            </properties>
+          </component>
+          <component id="cea26" class="javax.swing.JRadioButton" binding="LFURadioButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4079166"/>
+              <foreground color="-16777216"/>
+              <text value="LFU"/>
+            </properties>
+          </component>
+          <component id="c1498" class="javax.swing.JRadioButton" binding="LRURadioButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4079166"/>
+              <foreground color="-16777216"/>
+              <text value="LRU"/>
+            </properties>
+          </component>
+          <component id="ad48f" class="javax.swing.JRadioButton" binding="FIFORadioButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4079166"/>
+              <foreground color="-16777216"/>
+              <text value="FIFO"/>
+            </properties>
+          </component>
+          <component id="451fa" class="javax.swing.JTextField" binding="nConj">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="c6f6f" class="javax.swing.JLabel" binding="textConj">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Numero de linhas por conjunto"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="1b20b" binding="mapPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4079166"/>
+        </properties>
+        <border type="line" title="Mapeamentos">
+          <title-color color="-16777216"/>
+          <color color="-16777216"/>
+        </border>
+        <children>
+          <component id="e9aa8" class="javax.swing.JRadioButton" binding="DiretoRadioButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4079166"/>
+              <foreground color="-16777216"/>
+              <text value="Direto"/>
+            </properties>
+          </component>
+          <component id="fdfaf" class="javax.swing.JRadioButton" binding="AssociativoConjuntoRadioButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4079166"/>
+              <foreground color="-16777216"/>
+              <text value="Associativo em Conjunto"/>
+            </properties>
+          </component>
+          <component id="7939e" class="javax.swing.JRadioButton" binding="AssociativoRadioButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4079166"/>
+              <foreground color="-16777216"/>
+              <text value="Associativo"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="935" class="javax.swing.JLabel" binding="configLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Config"/>
+        </properties>
+      </component>
+      <component id="26472" class="javax.swing.JLabel" binding="testeLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Teste"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="Maps">
+      <member id="4e50d"/>
+      <member id="4e50d"/>
+      <member id="7186e"/>
+      <member id="28eab"/>
+      <member id="e9aa8"/>
+      <member id="fdfaf"/>
+      <member id="7939e"/>
+    </group>
+    <group name="Subs">
+      <member id="ad48f"/>
+      <member id="5748c"/>
+      <member id="c1498"/>
+      <member id="cea26"/>
+    </group>
+  </buttonGroups>
+</form>
